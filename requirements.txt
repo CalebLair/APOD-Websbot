@@ -1,0 +1,7 @@
+from bs4 import BeautifulSoup
+from requests import get
+import requests
+import textwrap
+from tkinter import *
+from PIL import ImageTk, Image
+import os
