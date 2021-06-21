@@ -4,6 +4,7 @@ import requests
 import textwrap
 from tkinter import *
 from PIL import ImageTk, Image
+import os
 
 
 def cat_clean_print(inp):
@@ -56,10 +57,14 @@ if __name__ == "__main__":
     root.title("APOD webbot")
     root.iconbitmap("APOD.ico")
 
+
     def open():
         global my_img
+        for file in os.listdir(os.getcwd()):
+            if file.endswith(".jpg"):
+                file_to_use = file
         top = Toplevel()
-        my_img = ImageTk.PhotoImage(Image.open("tadpole_HubbleBiju_3852.jpg"))
+        my_img = ImageTk.PhotoImage(Image.open(file_to_use))
         testLabel = Label(top, image=my_img)
         testLabel.pack()
 
