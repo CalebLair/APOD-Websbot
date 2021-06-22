@@ -3,14 +3,13 @@ A simple program that pulls info from NASA's Astronomy Picture Of the Day (APOD)
 # How to install
 This assumes you have python and pip already installed and set up
 ## Installing required libraries
-Download the files in the repository and place all of them in their own directory. Using the command line, navigate to the
-newly created directory and run the following in the command line (if you have python3, then you may have to use pip3 instead of pip):
-`$ pip install -r requirements.txt` 
+Download the files in the repository and place all of them in their own directory. Nativate to the newly created directory using a command line and use pip to install all 
+the important modules which are specified in `requirements.txt`
 # Running the program
 To run the program, simply navigate to the directory where the files from this repository are located, and use python to run
-APODwebsbot.py like so (if you have python3, simply change python to python3):
-`$ python APODwebsbot.py`
+APODwebsbot.py. It takes a few seconds then the GUI will appear with the information and a button to click to display the picture of the day
 # Notes on current version use
-Under the current version the image file that the os module looks for is a jpg extention while the image file downloaded may be of extentions jpg, gif, and png.
-This means if the file is a png or gif the file won't be displayed but will be downloaded (assuming it's a gif or png). Additionally it assumes there will only be 1 jpg in
-the directory so if there is more than 1 the wrong image might be displayed. The last issue is that when the image is displayed in the GUI it may be shown blown up and as such the entire image isn't shown. Future versions will aim to fix all these problems, but be aware the first two may create issues for displaying the image. 
+Under the current version the image file downloaded can be of file extentions jpg, gif, and png but the os module of the program only looks for 1 jpg to display.
+This means an image file can be downloaded but won't be displayed when the button to do so is pressed. If there is more than 1 jpg files the wrong picture might get displayed.
+Additionally there is an issue with the 6/21/2021 APOD image being blown way up causing only a portion of the image to be displayed on the whole screen. This issue may persist 
+for other images but this is yet untested. A future update is planned to fix these known issues. 
