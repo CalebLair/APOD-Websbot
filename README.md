@@ -12,4 +12,7 @@ APODwebsbot.py. It takes a few seconds then the GUI will appear with the informa
 Under the current version the image file downloaded can be of file extentions jpg, gif, and png but the os module of the program only looks for 1 jpg to display.
 This means an image file can be downloaded but won't be displayed when the button to do so is pressed. If there is more than 1 jpg files the wrong picture might get displayed.
 Additionally there is an issue with the 6/21/2021 APOD image being blown way up causing only a portion of the image to be displayed on the whole screen. This issue may persist 
-for other images but this is yet untested. A future update is planned to fix these known issues. 
+for other images but this is yet untested. A future update is planned to fix these known issues.
+# Pictures 
+![image](https://user-images.githubusercontent.com/80286090/123854440-554a2e00-d8e4-11eb-9b50-01b1dcd5a680.png)
+![image](https://user-images.githubusercontent.com/80286090/123854520-6f840c00-d8e4-11eb-885f-31b11cae32d4.png)
