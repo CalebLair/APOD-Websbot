@@ -28,8 +28,11 @@ def img_open():
             file_to_use = file
             top = Toplevel()
             top.iconbitmap("APOD.ico")
-            # image resizing logic goes here?
-            my_img = ImageTk.PhotoImage(Image.open(file_to_use).resize((400, 400)))
+            # image resizing logic goes here
+            image = Image.open(file_to_use)
+            image.thumbnail((600, 600))
+            image.save(file_to_use)
+            my_img = ImageTk.PhotoImage(Image.open(file_to_use))
             testLabel = Label(top, image=my_img)
             testLabel.pack()
 
