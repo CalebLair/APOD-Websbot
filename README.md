@@ -9,10 +9,8 @@ the important modules which are specified in `requirements.txt`
 To run the program, simply navigate to the directory where the files from this repository are located, and use python to run
 APODwebsbot.py. It takes a few seconds then the GUI will appear with the information and a button to click to display the picture of the day
 # Notes on current version use
-Under the current version the image file downloaded can be of file extentions jpg, gif, and png but the os module of the program only looks for 1 jpg to display.
-This means an image file can be downloaded but won't be displayed when the button to do so is pressed. If there is more than 1 jpg files the wrong picture might get displayed.
-Additionally there is an issue with the 6/21/2021 APOD image being blown way up causing only a portion of the image to be displayed on the whole screen. This issue may persist 
-for other images but this is yet untested. A future update is planned to fix these known issues.
+Under this updated version it looks to download file extentions jpg, gif, and png but still only displays jpg files to show and everytime I've run the program the file has been
+a jpg so in theory there should be no issues here. I've also seen a YouTube video be shown in place of an image and the program downloaded and displayed an image of a sad kitten so that was interesting. Previous issues of image not fitting on screen and potentially showing the wrong image for the correct day have been fixed but better solutions could be implimented.
 # Pictures 
 ![image](https://user-images.githubusercontent.com/80286090/123854440-554a2e00-d8e4-11eb-9b50-01b1dcd5a680.png)
 ![image](https://user-images.githubusercontent.com/80286090/123854520-6f840c00-d8e4-11eb-885f-31b11cae32d4.png)
